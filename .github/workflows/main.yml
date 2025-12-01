@@ -49,11 +49,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Install Render CLI
-        run: |
-          curl -L https://cdn.render.com/cli/latest/render-linux.tar.gz | tar -xz
-          sudo mv render /usr/local/bin/
+      - name: Install Render CLI via npm
+        run: npm install -g @render/cli
 
       - name: Restart Render service
         env:
