@@ -1,4 +1,4 @@
-name: Node.JS CI/CD with Docker on Render1
+name: Node.JS CI/CD with Docker on Render
 
 on:
   push:
